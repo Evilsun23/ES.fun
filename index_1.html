@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ES.fun (167.44-54_626)</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ES.fun</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111;
+    transition: 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #000;
+    color: white;
+}
+
+.toggle {
+    cursor: pointer;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* container */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    border-color: #000;
+}
+
+.game-logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.game-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-url {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* dark mode */
+
+.dark {
+    background: #111;
+    color: white;
+}
+
+.dark .game-card {
+    border-color: #333;
+}
+
+.dark .game-card:hover {
+    border-color: white;
+}
+
+.dark .btn {
+    border-color: #444;
+    color: white;
+}
+
+.dark .btn:hover {
+    background: white;
+    color: black;
+}
+
+.dark .toggle {
+    border-color: #444;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    color: gray;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>ES.fun</h1>
+
+    <div class="header-buttons">
+
+        <a href="https://evilsun.gumroad.com/l/Tipme" target="_blank" class="btn">
+            Support our work
+        </a>
+
+        <a href="https://www.youtube.com/@3vilsun23" target="_blank" class="btn">
+            YouTube
+        </a>
+
+        <div class="toggle" onclick="toggleMode()">🌙 Light/Dark Mode</div>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <div class="games-grid">
+
+        <!-- Supernova Clicker -->
+        <div class="game-card" onclick="openGame('https://supernova-clicker.lovable.app')">
+            <img src="supernova.png" class="game-logo">
+            <div class="game-title">Supernova Clicker</div>
+        </div>
+
+        <!-- Space Rocket Builder -->
+        <div class="game-card" onclick="openGame('https://space-rocket-builder.lovable.app')">
+            <img src="rocket.png" class="game-logo">
+            <div class="game-title">Space Rocket Builder</div>
+        </div>
+
+        <!-- Bubble Frenzy -->
+        <div class="game-card" onclick="openGame('https://bubble-frenzy23.lovable.app')">
+            <img src="bubble.png" class="game-logo">
+            <div class="game-title">Bubble Frenzy</div>
+        </div>
+
+        <!-- Stocks -->
+        <div class="game-card" onclick="openGame('https://stocks23.lovable.app')">
+            <img src="stocks.png" class="game-logo">
+            <div class="game-title">Stocks</div>
+
+        <!-- Orchestra of Chaos -->
+        <div class="game-card" onclick="openGame('https://orchestra.lovable.app')">
+            <img src="orchestra.png" class="game-logo">
+            <div class="game-title">Orchestra of Chaos</div>
+
+        <!-- Guessing Game -->
+        <div class="game-card" onclick="openGame('https://guessing-game.lovable.app')">
+            <img src="guess.png" class="game-logo">
+            <div class="game-title">Guessing Game</div>
+
+    </div>
+
+</div>
+
+  <script>
+
+function openGame(url) {
+    window.open(url, "_blank");
+}
+
+function toggleMode() {
+    document.body.classList.toggle("dark");
+}
+
+</script>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
